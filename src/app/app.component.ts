@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LogService } from './core/services/log.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'cs1-headfirst-angular';
+
+  constructor(
+    private logService: LogService
+  ){
+
+  }
 }
