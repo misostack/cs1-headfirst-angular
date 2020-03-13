@@ -1,1 +1,6 @@
 <p>example-list-container works!</p>
+<ul>
+  <li *ngFor="let item of exampleList$ | async">
+    {{ item.title }} - {{ item.id }} - {{ item.status }}
+  </li>
+</ul>

@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { ExampleListContainer } from './containers/example-list-container/example-list.container';
 
-export const EXAMPLE_COMPONENTS = [
+export const EXAMPLE_ENTRY_COMPONENTS = [
   ExampleListContainer,
 ];
 

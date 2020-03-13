@@ -1,0 +1,9 @@
+{
+  "examples": [
+    {"id": "1", "title": "something", "description": "lorem ipsum lorem ipib klak blomsoo", "status": "done", "createdAt": 123123, "updatedAt": 123123},
+    {"id": "2", "title": "something", "description": "lorem ipsum lorem ipib klak blomsoo", "status": "done", "createdAt": 123123, "updatedAt": 123123},
+    {"id": "3", "title": "something", "description": "lorem ipsum lorem ipib klak blomsoo", "status": "done", "createdAt": 123123, "updatedAt": 123123},
+    {"id": "4", "title": "something", "description": "lorem ipsum lorem ipib klak blomsoo", "status": "done", "createdAt": 123123, "updatedAt": 123123},
+    {"id": "5", "title": "something", "description": "lorem ipsum lorem ipib klak blomsoo", "status": "done", "createdAt": 123123, "updatedAt": 123123},
+  ]
+}
