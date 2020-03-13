@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { LogService } from './core/services/log.service';
+import { LogService } from '@core/services/log.service';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  templateUrl: './base.component.html',
+  styleUrls: ['./base.component.scss']
 })
-export class AppComponent {
+export class BaseComponent {
   title = 'cs1-headfirst-angular';
 
   constructor(
