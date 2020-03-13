@@ -7,6 +7,35 @@
 
 ![Angular App Architecture](./assets/angular-app-architecture.png)
 
+## Workflow
+
+1. A module structure
+
+```json
+{
+  "example": [
+    "example.module.ts", // declare all elements in module
+    "example-routing.module.ts", // declare entry components with routes
+    "example-components.module.ts", // components placed here to allow sharing
+    "components", // all presentation components in this module, can group by functionals
+    "containers", // all container components in this module
+    "services", // the service in this module
+    "entities", // the defined entities in module - not required
+    "repositories", // the repositories - not required
+  ]
+}
+```
+
+```bash
+# generate new module with route
+ng g module {modulename} --routing=true
+# Add new route to this module in base route
+# Import Shared Module into this new module
+
+## Create
+ ng g component example/components/example-item --module=example/example-components.module --skipTests=true
+```
+
 ## Angular Fundamentals
 
 ### Components
@@ -88,6 +117,7 @@
 
 - https://www.avatto.com/study-material/software-engineering-cohesion
 - https://thebojan.ninja/2015/04/08/high-cohesion-loose-coupling/
-
+- https://nehalist.io/working-with-models-in-angular/
+- https://khalilstemmler.com/articles/typescript-domain-driven-design/ddd-frontend/
 
 [entry_components]: ./assets/entry-components.png
