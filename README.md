@@ -1,5 +1,12 @@
 # Cs1HeadfirstAngular
 
+## Angular App Architecture
+
+> Version : 0.1
+> Release Date: 2020-03-13
+
+![Angular App Architecture](./assets/angular-app-architecture.png)
+
 ## Angular Fundamentals
 
 ### Components
@@ -13,7 +20,7 @@
 
 > Angular router --> entry_components[]
 
-!['Entry components'][entry_component]
+![Entry components][entry_component]
 
 ### NgModules
 
@@ -77,10 +84,10 @@
 - https://angular.io/guide/sharing-ngmodules
 
 
-[entry_components]: ./assets/entry-components.png
-
-
 ## Refs
 
 - https://www.avatto.com/study-material/software-engineering-cohesion
 - https://thebojan.ninja/2015/04/08/high-cohesion-loose-coupling/
+
+
+[entry_components]: ./assets/entry-components.png
