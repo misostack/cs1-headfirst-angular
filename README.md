@@ -130,6 +130,30 @@ sudo apt-get install chromium-browser -y
 - https://nehalist.io/working-with-models-in-angular/
 - https://khalilstemmler.com/articles/typescript-domain-driven-design/ddd-frontend/
 
+### Api initializer
+
+- https://itnext.io/handle-restricted-routes-in-angular-with-route-guards-95c93be9d05e
+
+### DI Providers
+
+- https://angular.io/guide/dependency-injection-providers#factory-providers
+- https://angular.io/api/core/APP_INITIALIZER#description
+- https://www.tektutorialshub.com/angular/angular-how-to-use-app-initializer/#what-is-app-initializer
+- https://dzone.com/articles/how-to-use-the-app-initializer-token-to-hook-into
+
+> Sometimes you need to create a dependent value dynamically, based on information you won't have until run time. For example, you might need information that changes repeatedly in the course of the browser session. Also, your injectable service might not have independent access to the source of the information.
+
+### Auth
+
+- https://itnext.io/handle-restricted-routes-in-angular-with-route-guards-95c93be9d05e
+- https://blog.bitsrc.io/how-to-mock-a-backend-in-angular-using-httpinterceptor-667794d45e8d
+- https://blog.bitsrc.io/7-ways-to-leverage-httpinterceptors-in-angular-59436611844d
+- https://angular.io/api/common/http/HttpInterceptor#description
+
+### HTTP
+
+- https://angular.io/guide/http#testing-for-errors
+
 ### Testing
 
 - https://gist.github.com/ipepe/94389528e2263486e53645fa0e65578b
@@ -157,4 +181,31 @@ describe('someFunction', () => {
 });
 ```
 
+### Optimzing
+
+- https://blog.angular-university.io/how-does-angular-2-change-detection-really-work/
+- https://apiumhub.com/tech-blog-barcelona/change-detection-angular/
+- https://blog.bitsrc.io/3-ways-to-render-large-lists-in-angular-9f4dcb9b65
+- https://medium.com/@vyakymenko/increasing-rendering-performance-in-angular-with-lazy-render-ngfor-ae8c5d16e194
+- https://medium.com/@tharakamd.12/avoid-unnecessary-rendering-on-angular-ngfor-with-trackby-f56ae5d79561
+- Angular CKD : https://web.dev/virtualize-lists-with-angular-cdk/
+- https://blog.oasisdigital.com/2017/angular-runtime-performance-guide/
+- https://www.gistia.com/insights/improve-angular-performance-efficiency
+
+### Speed up development time
+
+- https://bit.dev/
+
+### Animations
+
+- https://angular.io/guide/reusable-animations
+- https://angular.io/guide/animations#animation-api-summary
+- http://animationsftw.in/#/basics
+- https://www.youtube.com/watch?v=JhNo3Wvj6UQ&feature=youtu.be&t=2h47m53s
+
 [entry_components]: ./assets/entry-components.png
+
+
+## Online Resource
+
+- https://www.youtube.com/channel/UCzrskTiT_ObAk3xBkVxMz5g/videos

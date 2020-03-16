@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient, HttpHeaders, HttpResponse } from '@angular/common/http';
 
 import { environment } from '@environments/environment';
-import { map, timeout } from 'rxjs/operators';
+import { map, timeout, tap } from 'rxjs/operators';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -21,21 +21,34 @@ export class ApiService {
   }
 
   get<T>(path: string, params: {} = {}) {
-    return this.http
-    .get(this.buildURL(path), this.buildOptions(params))
-    .pipe(
-      timeout(5000),
-      map(resp => this.marshalResponse(resp))
+    return this.marshal(
+      this.http
+      .get(this.buildURL(path), this.buildOptions(params))
     );
   }
 
   post(path: string, payload: {}, params: {} = {}) {
-    return this.http
-    .post(this.buildURL(path), payload, this.buildOptions(params))
-    .pipe(map(resp => this.marshalResponse(resp)));
+    return this.marshal(
+      this.http
+      .post(this.buildURL(path), payload, this.buildOptions(params))
+    )
+  }
+
+  private marshal(obsRes) {
+    return obsRes.pipe(
+      timeout(5000),
+      tap(
+          // Succeeds when there is a response; ignore other events
+          event => { console.log('success', event); return event; },
+          // Operation failed; error is an HttpErrorResponse
+          error => { console.log('error', error); return error; }
+      ),
+      map(resp => this.marshalResponse(resp))
+    );
   }
 
   private marshalResponse(resp) {
+
     if (environment.debug){
       console.group('<DEBUG>');
       console.info('<RESP>', resp);
@@ -43,7 +56,13 @@ export class ApiService {
       console.info('<RESP.body>', resp.body);
       console.groupEnd();
     }
-    return resp.body;
+    return {
+      status: resp.status,
+      statusText: resp.statusText,
+      body: resp.body,
+      url: resp.url,
+      ok: resp.ok
+    };
   }
 
   private buildOptions(params: {}) {
