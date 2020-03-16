@@ -39,6 +39,11 @@ ng g module {modulename} --routing=true
 ng test
 ## Test specific
 ng test --include=src/app/core/services/log
+
+## headless chromium
+
+sudo apt-get install chromium-browser -y
+
 ```
 
 ## Angular Fundamentals
@@ -124,5 +129,32 @@ ng test --include=src/app/core/services/log
 - https://thebojan.ninja/2015/04/08/high-cohesion-loose-coupling/
 - https://nehalist.io/working-with-models-in-angular/
 - https://khalilstemmler.com/articles/typescript-domain-driven-design/ddd-frontend/
+
+### Testing
+
+- https://gist.github.com/ipepe/94389528e2263486e53645fa0e65578b
+- https://developerslogblog.wordpress.com/2019/03/19/how-to-fix-no-binary-for-chrome-browser-on-your-platform/
+- https://medium.com/angular-in-depth/angular-testing-with-headless-chrome-d1343b349699
+- https://christianlydemann.com/all-you-need-to-know-about-mocking-in-angular-tests/
+- https://stackoverflow.com/questions/43186533/unit-test-error-cannot-call-promise-then-from-within-a-sync-test
+
+```javascript
+// wrong
+describe('someFunction', () => {
+    const dependency = TestBed.get(Dependency); // this was causing the error
+
+    it('should not fail', () => {
+        someFunction(dependency);
+    });
+});
+
+// fixed
+describe('someFunction', () => {
+    it('should not fail', () => {
+        const dependency = TestBed.get(Dependency); // putting it here fixed the issue
+        someFunction(dependency);
+    });
+});
+```
 
 [entry_components]: ./assets/entry-components.png
