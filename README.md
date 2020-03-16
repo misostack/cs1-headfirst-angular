@@ -34,6 +34,11 @@ ng g module {modulename} --routing=true
 
 ## Create
  ng g component example/components/example-item --module=example/example-components.module --skipTests=true
+
+## Test all
+ng test
+## Test specific
+ng test --include=src/app/core/services/log
 ```
 
 ## Angular Fundamentals

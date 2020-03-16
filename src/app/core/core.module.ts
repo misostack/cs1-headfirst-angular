@@ -1,19 +1,26 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { LogService } from './services/log.service';
+import { HttpClientModule } from '@angular/common/http';
+
+import {
+  LogService
+} from './services';
+
+const CORE_SERVICES = [
+  LogService,
+];
 
 
 
 @NgModule({
   declarations: [],
   imports: [
-    CommonModule,
+    HttpClientModule,
   ],
   providers: [
-    LogService,
+    ...CORE_SERVICES,
   ],
   exports: [
-    CommonModule,
+    HttpClientModule,
   ]
 })
 export class CoreModule { }
