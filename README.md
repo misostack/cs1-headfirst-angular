@@ -181,6 +181,22 @@ describe('someFunction', () => {
 });
 ```
 
+### Error handler
+
+- - https://www.positronx.io/angular-error-handling-tutorial-with-examples/
+- https://angular.io/api/core/ErrorHandler
+- https://medium.com/@amcdnl/global-error-handling-with-angular2-6b992bdfb59c
+- https://medium.com/angular-in-depth/expecting-the-unexpected-best-practices-for-error-handling-in-angular-21c3662ef9e4
+- https://medium.com/dailyjs/how-to-send-errors-into-slack-dc552e30506f
+- https://www.positronx.io/angular-internationalization-i18n-with-ngx-translate-tutorial/
+
+### I18n
+
+- https://github.com/ngx-translate/http-loader/issues/25
+- https://github.com/ngx-translate/core/issues/1005
+- https://netbasal.com/strategies-for-cache-busting-translation-files-in-angular-86143ee14c3c
+- https://phrase.com/blog/posts/10-common-mistakes-in-software-localization/
+
 ### Optimzing
 
 - https://blog.angular-university.io/how-does-angular-2-change-detection-really-work/
@@ -205,6 +221,12 @@ describe('someFunction', () => {
 
 [entry_components]: ./assets/entry-components.png
 
+
+## Common mistakes
+
+- https://www.mindinventory.com/blog/common-mistakes-angular-developers-commit/
+- https://medium.com/developeronrent/top-10-common-mistakes-that-angular-developers-commit-fc0fc3cc1ddd
+- https://medium.com/hackernoon/top-common-mistakes-of-angular-developers-2a36524f2c21
 
 ## Online Resource
 
