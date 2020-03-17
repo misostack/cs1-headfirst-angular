@@ -45,6 +45,25 @@ ng test --include=src/app/core/services/log
 sudo apt-get install chromium-browser -y
 
 ```
+## Summary
+
+1. DI Services
+2. Error Handler: logs, notification
+4. API Service: support multiple providers, HTTP Request, Response, HTTP Error, Service Test
+5. Log Service: domains, report error
+6. I18n Service
+7. Auth Service
+8. Auth Module: Auth Routes, Auth Service, Auth Guards, User Entity, Auth Containers, Auth Components
+9. Unit Test
+10. Splash Loading
+11. Shared Module
+12. List Items Module: Forms, Entities, Facades, Services, Containers, Components
+13. Environments
+14. CI & CD
+15. Push to Heroku
+16. README
+17. Custom Schematics
+
 
 ## Angular Fundamentals
 
@@ -227,6 +246,16 @@ describe('someFunction', () => {
 - https://www.mindinventory.com/blog/common-mistakes-angular-developers-commit/
 - https://medium.com/developeronrent/top-10-common-mistakes-that-angular-developers-commit-fc0fc3cc1ddd
 - https://medium.com/hackernoon/top-common-mistakes-of-angular-developers-2a36524f2c21
+
+## Libraries
+
+- https://angular.io/guide/libraries
+
+## Schematics
+
+- https://angular.io/guide/schematics
+- https://medium.com/@tomastrajan/total-guide-to-custom-angular-schematics-5c50cf90cdb4
+- https://developer.okta.com/blog/2019/02/13/angular-schematics
 
 ## Online Resource
 

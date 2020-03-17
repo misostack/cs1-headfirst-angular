@@ -7,9 +7,9 @@ Feature: ApiService Library
    Scenario: Create new instance
    Given An instance of ApiService
    When Create new instance
-   Then Get an instance
+   Then Return an instance
 
-   Scenario: Send GET request
+   Scenario: Send GET/POST/PUT/PATCH/DELETE/HEAD/OPTIONS request
    Given An API's URI
    When Send a GET request to an existed and avaiable URI
-   Then Get the full response with status code, body
+   Then Return the full response with status code, body
