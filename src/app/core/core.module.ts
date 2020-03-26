@@ -1,26 +1,36 @@
+import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http';
+// routing
+import { CoreRoutingModule } from './core-routing.module';
+// services, guards, pipes
 
-import {
-  LogService
-} from './services';
+// containers, components
+import { CoreContainer } from './containers';
 
-const CORE_SERVICES = [
-  LogService,
+const CORE_PROVIDERS = [
+  // Global App Services
 ];
 
+const CORE_CONTAINERS = [
+  CoreContainer,
+];
 
+const CORE_COMPONENTS = [
+
+];
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    ...CORE_CONTAINERS,
+    ...CORE_COMPONENTS,
+  ],
   imports: [
-    HttpClientModule,
+    BrowserModule,
+    CoreRoutingModule,
   ],
   providers: [
-    ...CORE_SERVICES,
+    CORE_PROVIDERS,
   ],
-  exports: [
-    HttpClientModule,
-  ]
+  bootstrap: [CoreContainer]
 })
 export class CoreModule { }
