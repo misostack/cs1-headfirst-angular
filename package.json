@@ -1,10 +1,12 @@
 {
   "name": "cs1-headfirst-angular",
-  "version": "0.0.0",
+  "version": "0.1",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start": "ng serve --ssl false --host 127.0.0.1  --configuration=local",
+    "start:open": "ng serve --ssl false --host 127.0.0.1 --open --configuration=local",
+    "build": "ng build --configuration=dev",
+    "buildProduction": "ng build --configuration=production --aot true --output-hashing all",
     "test": "ng test",
     "test-headless": "ng test --watch=false --browsers=ChromeHeadless",
     "lint": "ng lint",

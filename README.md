@@ -1,5 +1,7 @@
 # Cs1HeadfirstAngular
 
+- https://favicon.io/favicon-converter/
+
 ## Angular App Architecture
 
 > Version : 0.1
