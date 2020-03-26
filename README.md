@@ -1,6 +1,16 @@
 # Cs1HeadfirstAngular
 
+## Base Module
+
+1. Log Service
+2. I18n
+3. HTTP Service -> abstract to allow switch provider --> API Service extends HTTP Service with specific provider.
+
+
+- https://www.techiediaries.com/angular-file-upload-progress-bar/
 - https://favicon.io/favicon-converter/
+- https://github.com/nervgh/angular-file-upload
+- https://www.ahmedbouchefra.com/angular/angular-9-8-tutorial-example-upload-files-with-formdata-httpclient-rxjs-and-material-progressbar/
 
 ## Angular App Architecture
 
