@@ -1,9 +1,7 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders, HttpResponse } from '@angular/common/http';
+import { HttpClient, HttpHeaders} from '@angular/common/http';
 
-import { environment } from '@environments/environment';
-import { map, timeout, tap } from 'rxjs/operators';
-import { Observable } from 'rxjs';
+import { timeout, tap } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root',
@@ -16,21 +14,36 @@ export class HttpService {
   get(path: string, params: {} = {}, httpOptions = {}){
     return this.http.get(path, this.buildOptions(params, httpOptions))
     .pipe(
-      timeout(5000),
-      tap(
-          // Succeeds when there is a response; ignore other events
-          event => event,
-          // Operation failed; error is an HttpErrorResponse
-          error => error
-      )
+      timeout(5000)
     );
   }
 
-  private buildOptions(params: {}, httpOptions = {}) {
+  post(path: string, payload: {}, params: {} = {}, httpOptions = {}) {
+    return this.http.post(path, payload, this.buildOptions(params, httpOptions))
+    .pipe(
+      timeout(5000)
+    );
+  }
+
+  patch(path: string, payload: {}, params: {} = {}, httpOptions = {}) {
+    return this.http.patch(path, payload, this.buildOptions(params, httpOptions))
+    .pipe(
+      timeout(5000)
+    );
+  }
+
+  delete(path: string, params: {} = {}, httpOptions = {}){
+    return this.http.delete(path, this.buildOptions(params, httpOptions))
+    .pipe(
+      timeout(5000)
+    );
+  }
+
+  private buildOptions(params: {}, httpOptions = {}, observe: 'reponse' | 'body' = 'reponse') {
     const headers = new HttpHeaders(httpOptions);
     return Object.assign({}, {
       headers,
       params,
-    }, { observe: 'response' });
+    }, { observe });
   }
 }
