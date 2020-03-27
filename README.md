@@ -6,7 +6,13 @@
 2. I18n
 3. HTTP Service -> abstract to allow switch provider --> API Service extends HTTP Service with specific provider.
 
+### I18n
 
+- https://github.com/ngx-translate/core
+- https://github.com/biesbjerg/ngx-translate-extract
+- https://www.codeandweb.com/babeledit/tutorials/how-to-translate-your-angular8-app-with-ngx-translate
+
+### Refs
 - https://www.techiediaries.com/angular-file-upload-progress-bar/
 - https://favicon.io/favicon-converter/
 - https://github.com/nervgh/angular-file-upload
