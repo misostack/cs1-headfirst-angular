@@ -1,5 +1,14 @@
 # Cs1HeadfirstAngular
 
+## Todo
+
+- [ ] I18n
+- [ ] Log Service
+- [ ] API Service
+- [ ] Core module structure: dtos, entities, services, facades,
+- [ ] Auth Module
+
+
 ## Base Module
 
 1. Log Service
@@ -11,6 +20,7 @@
 - https://github.com/ngx-translate/core
 - https://github.com/biesbjerg/ngx-translate-extract
 - https://www.codeandweb.com/babeledit/tutorials/how-to-translate-your-angular8-app-with-ngx-translate
+- https://stackoverflow.com/questions/42308261/how-to-disable-caching-for-i18next-translation-json-files
 
 ### Stylesheets
 
@@ -27,6 +37,10 @@
 ### Globalize
 
 - https://angular.io/guide/migration-localize
+
+### Serialize and Deserialize
+
+- https://www.npmjs.com/package/typescript-json-serializer
 
 ### Refs
 - https://www.techiediaries.com/angular-file-upload-progress-bar/
