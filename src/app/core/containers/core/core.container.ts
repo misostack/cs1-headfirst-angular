@@ -1,6 +1,4 @@
-import { Component } from '@angular/core';
-
-import { environment } from '@environments/environment';
+import { Component, HostBinding } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -9,5 +7,5 @@ import { environment } from '@environments/environment';
 })
 // tslint:disable-next-line: component-class-suffix : to allow seperate app structure in container vs component
 export class CoreContainer {
-  environment = environment;
+  @HostBinding('attr.class') cssClasses = 'app-root';
 }

@@ -15,8 +15,9 @@
       ],
       "@modules/*": ["src/app/*"],
       "@base/*": ["src/app/base/*"],
-      "@core/*": ["src/app/core/*"],
+      "@core/*": ["src/app/core/*"],      
       "@shared/*": ["src/app/shared/*"],
+      "@ui/*": ["src/app/ui/*"],
       "@environments/*": ["src/environments/*"],
       "@assets/*": ["src/environments/assets/*"],
       "*": [

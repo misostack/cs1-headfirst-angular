@@ -1,0 +1,18 @@
+// custom bootstrap elements : https://getbootstrap.com/docs/4.0/getting-started/theming/
+// Your variable overrides
+// body
+$body-bg: #f1f1f1;
+$body-color: #111;
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+// grid : https://github.com/twbs/bootstrap-sass/blob/master/assets/stylesheets/bootstrap/_grid.scss
+.app-root{
+  display: block;
+  min-height: 100vh;
+}
+.app-module-container {
+  @extend .container-fluid;
+  margin: 0;
+  padding: 0;
+}

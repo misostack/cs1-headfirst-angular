@@ -12,6 +12,22 @@
 - https://github.com/biesbjerg/ngx-translate-extract
 - https://www.codeandweb.com/babeledit/tutorials/how-to-translate-your-angular8-app-with-ngx-translate
 
+### Stylesheets
+
+- https://ng-bootstrap.github.io/#/getting-started#i18n
+
+### Schematics
+
+- https://medium.com/@tomastrajan/%EF%B8%8F-how-to-create-your-first-custom-angular-schematics-with-ease-%EF%B8%8F-bca859f3055d
+
+### Ivy
+
+- https://medium.com/angular-in-depth/all-you-need-to-know-about-ivy-the-new-angular-engine-9cde471f42cf
+
+### Globalize
+
+- https://angular.io/guide/migration-localize
+
 ### Refs
 - https://www.techiediaries.com/angular-file-upload-progress-bar/
 - https://favicon.io/favicon-converter/

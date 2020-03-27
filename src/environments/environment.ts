@@ -4,6 +4,7 @@ export const environment = {
   name: 'ENV_NAME',
   debug: false,
   locale: 'fr',
+  homeRoute: '',
   slack: {
     enable: false,
     url: '',
