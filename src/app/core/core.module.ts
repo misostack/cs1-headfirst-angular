@@ -1,11 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BaseModule } from '@base/base.module';
 // routing
 import { CoreRoutingModule } from './core-routing.module';
 // services, guards, pipes
 
 // containers, components
 import { CoreContainer } from './containers';
+
 
 const CORE_PROVIDERS = [
   // Global App Services
@@ -26,6 +28,7 @@ const CORE_COMPONENTS = [
   ],
   imports: [
     BrowserModule,
+    BaseModule,
     CoreRoutingModule,
   ],
   providers: [

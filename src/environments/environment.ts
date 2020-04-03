@@ -18,7 +18,17 @@ export const environment = {
       lastName: 'User',
     },
   },
-  apiUrl: 'http://localhost:3000/v1',
+  providers: {
+    api: {
+      name: 'api',
+      url: 'http://localhost:3000/v1',
+      timeout: 5000,
+    }
+  },
+  auth: {
+    type: 'Bearer',
+    key: 'token',
+  },
   stripe: {
     publishedKey: ''
   }

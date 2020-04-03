@@ -1,4 +1,9 @@
 export interface BaseApiInterface {
+  provider: BaseAPIProvider;
+  getProvider(): BaseAPIProvider;
+}
 
-  getProvider(): string;
+export interface BaseAPIProvider {
+  name: string;
+  url: string;
 }
